@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("public/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("public/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBMPlexSans";
+  color: white;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.top-nav {
+  display: flex;
+  background-color: rgba(16, 20, 24, 0.8);
+  padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+.top-nav > .nav-logo {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.top-nav > .nav-middle {
+  flex-grow: 1;
+}
+
+.top-nav > .nav-middle > .nav-links {
+  display: none;
+}
+
+.top-nav > .nav-middle > .nav-links > .nav-link {
+  border-radius: 0.5rem;
+}
+
+.top-nav > .nav-middle > .nav-links > .nav-link:hover {
+  background-color: rgba(144, 202, 249, 0.08);
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+.nav-dropdown-active {
+  display: block;
+  background-color: rgba(16, 20, 24, 0.8);
+}
+
+.nav-dropdown > .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-dropdown > .nav-links > .nav-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-dropdown > .nav-links > .nav-link:hover {
+  background-color: rgba(144, 202, 249, 0.08);
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(144, 202, 249, 0.08);
+}
+
+.toggle-btn-icon {
+  fill: white;
+  width: 1.25em;
+  height: 1.25em;
+}
+
+@media screen and (min-width: 900px) {
+  .top-nav > .nav-middle > .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+}

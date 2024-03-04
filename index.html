@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home - nierspline</title>
+  </head>
+  <body>
+    <!-- change to id -->
+    <nav class="top-nav">
+      <a class="nav-logo" href="index.html">nierspline</a>
+      <div class="nav-middle">
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="posts.html">Posts</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="about.html">About</a>
+        </div>
+      </div>
+      <!-- hamburger icon -->
+      <a href="javascript:void(0);" class="toggle-btn">
+        <svg
+          class="toggle-btn-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </a>
+    </nav>
+    <div class="nav-dropdown">
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="posts.html">Posts</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="about.html">About</a>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".top-nav>.toggle-btn").onclick = function () {
+        var element = document.querySelector(".nav-dropdown");
+        element.classList.toggle("nav-dropdown-active");
+      };
+    </script>
+  </body>
+</html>
